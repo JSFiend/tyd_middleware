@@ -1,0 +1,18 @@
+{
+  "name": "tyd_middleware",
+  "version": "1.0.0",
+  "description": "think you do middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "combinelee",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
