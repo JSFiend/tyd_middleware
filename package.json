@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSFiend/tyd_middleware.git"
+  },
   "author": "combinelee",
   "license": "ISC",
   "devDependencies": {
