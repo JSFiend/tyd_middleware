@@ -4,6 +4,9 @@
   "description": "think you do middleware",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .js ./",
+    "lint-fix": "eslint --fix --ext .js ./",
+    "pretest": "eslint --ext .js ./",
     "test": "mocha test.js"
   },
   "repository": {
@@ -13,8 +16,10 @@
   "author": "combinelee",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.3"
+    "eslint-plugin-import": "^2.17.3",
+    "mocha": "^6.1.4"
   },
   "dependencies": {
     "axios": "^0.19.0",

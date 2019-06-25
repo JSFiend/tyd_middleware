@@ -1,7 +1,6 @@
 const finalhandler = require('finalhandler');
 
 class TydMiddleware {
-
   constructor() {
     this.middlewares = [];
     this.inject = this.inject.bind(this);
