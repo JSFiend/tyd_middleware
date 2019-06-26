@@ -2,12 +2,12 @@
   "name": "tyd_middleware",
   "version": "1.1.0",
   "description": "think you do middleware",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint --ext .js ./",
     "lint-fix": "eslint --fix --ext .js ./",
     "pretest": "eslint --ext .js ./",
-    "test": "mocha test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

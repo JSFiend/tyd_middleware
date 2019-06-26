@@ -2,7 +2,7 @@
 const assert = require('assert');
 const http = require('http');
 const axios = require('axios');
-const TydMiddleware = require('./index');
+const TydMiddleware = require('../');
 let tydMiddleware;
 let server;
 
