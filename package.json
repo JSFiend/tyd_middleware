@@ -1,6 +1,6 @@
 {
   "name": "tyd_middleware",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "think you do middleware",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,6 @@
     "pretest": "eslint --ext .js ./",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
-
   },
   "repository": {
     "type": "git",
