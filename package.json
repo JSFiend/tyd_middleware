@@ -7,7 +7,9 @@
     "lint": "eslint --ext .js ./",
     "lint-fix": "eslint --fix --ext .js ./",
     "pretest": "eslint --ext .js ./",
-    "test": "mocha"
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+
   },
   "repository": {
     "type": "git",
@@ -16,10 +18,12 @@
   "author": "combinelee",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   },
   "dependencies": {
     "axios": "^0.19.0",
