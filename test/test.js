@@ -11,7 +11,7 @@ describe('think you do 中间价管理器', function() {
         tydMiddleware = new TydMiddleware();
         tydMiddleware.use(function (req, res) {}, function (req, res) {});
         assert(tydMiddleware.middlewares.length === 2, '实例化管理器错误，不能添加中间件');
-        assert.throws(tydMiddleware.use.bind(tydMiddleware, '12'), { message: '中间件必须是函数' });
+        assert.throws(() => { tydMiddleware.use('12') }, { message: '中间件必须是函数' });
     });
     describe('http 服务注入 管理器', function () {
         beforeEach(function () {
