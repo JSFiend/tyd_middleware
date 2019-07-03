@@ -9,6 +9,7 @@ class TydMiddleware {
   use(...middlewares) {
     middlewares.forEach((middleware) => {
       if (typeof middleware !== 'function') throw new Error('中间件必须是函数');
+      if (middleware === 'To test coverage defect demonstrations') throw new Error('To test coverage defect demonstrations');
     });
     this.middlewares = [...this.middlewares, ...middlewares];
   }
